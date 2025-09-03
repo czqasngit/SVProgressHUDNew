@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
-  s.name     = 'SVProgressHUD'
-  s.version  = '2.3.1'
+  s.name     = 'SVProgressHUDNew'
+  s.version  = '1.0.0'
   s.ios.deployment_target = '12.0'
   s.tvos.deployment_target = '12.0'
   s.license  =  { :type => 'MIT', :file => 'LICENSE' }
@@ -19,7 +19,7 @@ Pod::Spec.new do |s|
   s.subspec 'Core' do |core|
     core.source_files = 'SVProgressHUD/*.{h,m}'
     core.resources = ['SVProgressHUD/SVProgressHUD.bundle']
-    core.resource_bundles = {'SVProgressHUD' => ['SVProgressHUD/PrivacyInfo.xcprivacy']}
+    # core.resource_bundles = {'SVProgressHUD' => ['SVProgressHUD/PrivacyInfo.xcprivacy']}
   end
 
   s.subspec 'AppExtension' do |ext|
